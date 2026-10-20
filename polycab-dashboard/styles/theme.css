@@ -1,0 +1,280 @@
+/* Polycab dashboard theme. Loaded by ui.load_css(), which first injects the colour variables generated from
+   styles/tokens.json (--page, --card, --border, --chip, --text, --text2, --muted, --grid, --up, --down, --accent).
+   Dark is the default: Streamlit runs on a locked dark base theme (.streamlit/config.toml, same tokens).
+   Light mode: the header toggle renders a .pc-light-flag element; the whole app is colour-inverted, charts and the
+   custom blocks (.pc) are inverted back and use the light tokens; native surfaces use pre-inverted greys (--inv-*)
+   so that after inversion they land exactly on the light tokens (white cards on a light-grey page). */
+
+:root { --radius: 10px; --gap: 16px; --lift: 0 6px 18px rgba(0, 0, 0, 0.28); }
+
+/* ---------- surfaces (dark) ---------- */
+.stApp { background: var(--page); }
+[data-testid="stSidebar"] > div:first-child { background: var(--card); border-right: 1px solid var(--border); }
+
+/* ---------- light mode ---------- */
+.stApp:has(.pc-light-flag) { filter: invert(1) hue-rotate(180deg); background: var(--inv-page); }
+.stApp:has(.pc-light-flag) :is(.stPlotlyChart, .pc, img, video) { filter: invert(1) hue-rotate(180deg); }
+.stApp:has(.pc-light-flag) .pc img { filter: none; }  /* already re-inverted by its .pc block (the logo) */
+.stApp:has(.pc-light-flag) [data-testid="stSidebar"] > div:first-child { background: var(--inv-card);
+                                                                         border-right-color: var(--inv-border); }
+.stApp:has(.pc-light-flag) [class*="st-key-card-"] { background: var(--inv-card) !important;
+                                                      border-color: var(--inv-border) !important; }
+.stApp:has(.pc-light-flag) { --lift: 0 6px 18px rgba(255, 255, 255, 0.5); }  /* inverted: shows as a soft dark shadow */
+.pc-light-flag { display: none; }
+
+/* ---------- page ---------- */
+.block-container { padding-top: 0.75rem; padding-bottom: 3rem; max-width: 1400px; }
+.pc { color: var(--text); font-variant-numeric: tabular-nums; }
+.pc .up { color: var(--up); }
+.pc .down { color: var(--down); }
+.pc .flat { color: var(--text2); }
+
+/* ---------- header ---------- */
+.pc-header { padding: 14px 0 8px 0; }
+.pc-brand { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 22px; margin: 0 0 14px 0; }
+.pc-logo { height: 46px; width: auto; display: block; }
+.pc-header h1 { font-size: 2.9rem; font-weight: 800; letter-spacing: -0.5px; line-height: 1.05; margin: 0; padding: 0;
+                color: var(--text); }
+.pc-brand .pc-logo + h1 { border-left: 2px solid var(--border); padding-left: 22px; }
+.pc-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.pc-chip { background: var(--chip); border: 1px solid var(--border); border-radius: 999px; padding: 3px 12px;
+           font-size: 0.85rem; color: var(--text2); }
+.pc-chip strong { color: var(--text); font-weight: 600; }
+.pc-status-open::before, .pc-status-closed::before { content: ""; display: inline-block; width: 8px; height: 8px;
+           border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+.pc-status-open::before { background: var(--up); }
+.pc-status-closed::before { background: var(--muted); }
+.pc-price-row { display: flex; align-items: baseline; flex-wrap: wrap; gap: 14px; }
+.pc-price { font-size: 2.9rem; font-weight: 700; letter-spacing: -0.5px; color: var(--text); }
+.pc-price small { font-size: 1rem; font-weight: 500; color: var(--text2); margin-left: 4px; }
+.pc-change { font-size: 1.35rem; font-weight: 600; }
+.pc-asof { color: var(--text2); font-size: 0.9rem; margin-top: 2px; }
+
+/* ---------- performance strip ---------- */
+.pc-perf { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 8px; margin: 6px 0 4px 0; }
+.pc-perf-cell { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+                padding: 10px 6px; text-align: center; }
+.pc-perf-cell .lab { color: var(--text2); font-size: 0.82rem; }
+.pc-perf-cell .val { font-size: 1.05rem; font-weight: 600; margin-top: 2px; }
+
+/* ---------- cards / key-value grids ---------- */
+.pc-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+           padding: 18px 20px; margin: 4px 0 var(--gap) 0; }
+.pc-card h3 { font-size: 1.15rem; font-weight: 650; margin: 0 0 14px 0; padding: 0; color: var(--text); }
+.pc-kv { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px 24px; }
+.pc-kv .k { color: var(--text2); font-size: 0.85rem; }
+.pc-kv .v { color: var(--text); font-size: 1.3rem; font-weight: 600; margin-top: 2px; }
+.pc-kv .v small { font-size: 0.8rem; font-weight: 500; color: var(--text2); margin-left: 3px; }
+.pc-kv .n { color: var(--muted); font-size: 0.75rem; margin-top: 2px; }
+.pc-kv .v { font-size: clamp(1.05rem, 0.9rem + 0.6vw, 1.3rem); overflow-wrap: anywhere; }
+.pc-kv-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px 20px; }  /* half-width cards (Overview) */
+.pc-kv-3 .v { font-size: clamp(1rem, 0.85rem + 0.5vw, 1.2rem); }
+.pc-kv-3 > div:last-child:nth-child(3n+1) { grid-column: span 2; }  /* a lone last cell (52-week range) gets room */
+.pc-kv-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 20px; }
+.pc-kv-2 > div:last-child:nth-child(odd):not(:first-child) { grid-column: span 2; }
+
+/* ---------- source tags: short muted line under a chart; full note in the ⓘ tooltip ---------- */
+.pc-srcline { color: var(--muted); font-size: 0.78rem; margin: 2px 0 10px 2px; line-height: 1.3; }
+.pc-card .pc-srcline { margin: 14px 0 0 0; }
+.pc-info { cursor: help; color: var(--text2); border-bottom: 1px dotted var(--muted); padding: 0 2px; }
+.pc-info:focus { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+
+/* ---------- Streamlit KPI cards: never clip values such as ₹1,20,942 cr ---------- */
+[data-testid="stMetricValue"] { font-size: clamp(1.15rem, 0.95rem + 0.9vw, 1.75rem) !important; }
+[data-testid="stMetricValue"] > div { white-space: normal !important; overflow: visible !important;
+                                      text-overflow: clip !important; overflow-wrap: anywhere; line-height: 1.2; }
+[data-testid="stMetricLabel"] p { white-space: normal !important; }
+[data-testid="stMetricDelta"], [data-testid="stMetricDelta"] div { white-space: normal !important; overflow: visible !important;
+                                                                   text-overflow: clip !important; max-width: none !important; }
+[data-testid="stCaptionContainer"] { color: var(--muted); }
+
+/* ---------- section headers and chart cards (Part B) ---------- */
+.pc-section { margin: 26px 0 6px 0; }
+.pc-section h2 { font-size: 1.55rem; font-weight: 700; margin: 0; padding: 0; color: var(--text); }
+.pc-section p { color: var(--text2); margin: 2px 0 0 0; font-size: 0.95rem; }
+[class*="st-key-card-"] { background: var(--card); border-radius: var(--radius) !important;
+                          border-color: var(--border) !important; padding: 12px 14px 6px 14px !important;
+                          margin-bottom: var(--gap); }
+[class*="st-key-card-"] h3 { font-size: 1.1rem !important; font-weight: 650 !important; padding-top: 0.2rem !important; }
+
+/* ---------- section tabs: sticky bar at the very top of the page ---------- */
+[data-testid="stHeader"] { background: transparent; z-index: 999992; }  /* drawn over the tab bar ... */
+[data-testid="stHeader"], [data-testid="stHeader"] * { pointer-events: none !important; }
+[data-testid="stHeader"] :is(button, a, [role="button"]) { pointer-events: auto !important; }  /* ... only its buttons take clicks */
+[data-testid="stAppDeployButton"] { display: none; }  /* the sticky tab bar uses the header row */
+.stTabs [role="tablist"] { position: sticky; top: 0; z-index: 999991; gap: 6px; padding: 10px 0 0 0;
+  background: var(--w-page); border-bottom: 1px solid var(--border); box-shadow: 0 6px 10px -8px rgba(0, 0, 0, 0.5); }
+.stApp:has(.pc-light-flag) .stTabs [role="tablist"] { border-bottom-color: var(--inv-border); }
+.stTabs [data-testid="stTab"] { font-size: 1rem; font-weight: 500; padding: 8px 14px; color: var(--w-text2);
+  border-radius: 8px 8px 0 0; }
+.stTabs [data-testid="stTab"] p { font-size: 1rem; }
+.stTabs [data-testid="stTab"]:hover { color: var(--w-text); background: var(--w-opt_hover); }
+.stTabs [data-testid="stTab"][aria-selected="true"] { color: var(--w-accent); font-weight: 700;
+  text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
+.stTabs [data-testid="stTab"][aria-selected="true"] p { font-weight: 700; }
+.stTabs [data-testid="stTab"]:focus-visible { outline: 2px solid var(--w-accent); outline-offset: -2px; }
+.stTabs .react-aria-SelectionIndicator { background: var(--w-accent); height: 3px; }
+
+/* compact price header under the tab bar */
+.pc-header-compact { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; padding: 10px 0 4px 0; }
+.pc-header-compact .pc-name { font-size: 1.15rem; font-weight: 700; color: var(--text); }
+.pc-header-compact .pc-price { font-size: 1.25rem; letter-spacing: 0; }
+.pc-header-compact .pc-price small { font-size: 0.8rem; }
+.pc-header-compact .pc-change { font-size: 1rem; }
+.pc-header-compact .pc-asof { margin: 0; font-size: 0.82rem; }
+.pc-header-compact .pc-chip { padding: 1px 10px; font-size: 0.8rem; }
+.pc-about { font-size: 0.98rem; line-height: 1.6; color: var(--text); }
+.pc-about b { color: var(--text); }
+/* icons (Material Symbols, the font Streamlit already ships) */
+.pc-ico { font-family: "Material Symbols Rounded"; font-weight: normal; font-style: normal; font-size: 1.25em;
+  line-height: 1; letter-spacing: normal; text-transform: none; white-space: nowrap; direction: ltr;
+  -webkit-font-feature-settings: "liga"; font-feature-settings: "liga"; vertical-align: -0.2em; color: var(--accent); }
+.pc-section h2 { display: flex; align-items: center; gap: 10px; }
+.pc-section h2 .pc-ico { font-size: 1.6rem; background: var(--chip); border: 1px solid var(--border);
+  border-radius: 10px; padding: 5px; }
+.pc-data-chip { display: inline-flex; align-items: center; gap: 5px; }
+.pc-data-chip .pc-ico { font-size: 1rem; vertical-align: 0; }
+
+/* "At a glance" KPI tiles with sparklines */
+.pc-tiles { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; margin: 6px 0 18px 0; }
+.pc-tile { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 14px 10px;
+  position: relative; overflow: hidden; animation: pc-in 0.26s ease-out both;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
+.pc-tile::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px; background: var(--accent); opacity: 0.85; }
+.pc-tile:hover { transform: translateY(-2px); box-shadow: var(--lift); border-color: var(--accent); }
+.pc-tile .lab { color: var(--text2); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.02em; }
+.pc-tile .val { color: var(--text); font-size: clamp(1.15rem, 0.9rem + 0.7vw, 1.55rem); font-weight: 700; margin: 4px 0 6px 0;
+  white-space: nowrap; }
+.pc-tile .val small { font-size: 0.75rem; font-weight: 500; color: var(--text2); margin-left: 3px; }
+.pc-tile .row { display: flex; align-items: flex-end; justify-content: space-between; gap: 6px; flex-wrap: wrap; }
+.pc-tile .dl { font-size: 0.85rem; font-weight: 600; color: var(--text2); white-space: nowrap; }
+.pc-tile .ft { color: var(--muted); font-size: 0.72rem; margin-top: 6px; }
+.pc-spark { display: block; max-width: 100%; height: auto; }
+.pc-tile .pc-spark { width: 92px; height: auto; }
+
+/* latest quarter */
+.pc-lq-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: var(--text2);
+  font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; }
+.pc-notes { margin: 6px 0 4px 0; padding-left: 1.1rem; color: var(--text); line-height: 1.55; font-size: 0.96rem; }
+.pc-notes li { margin-bottom: 8px; }
+.pc-notes li::marker { color: var(--accent); }
+.pc-mini-gap { margin-top: 14px; }
+
+/* insight call-out (DuPont) */
+.pc-callout { display: flex; gap: 12px; align-items: flex-start; background: var(--chip); border: 1px solid var(--border);
+  border-left: 4px solid var(--accent); border-radius: var(--radius); padding: 12px 16px; color: var(--text);
+  line-height: 1.5; margin: 4px 0 6px 0; }
+.pc-callout .pc-ico { font-size: 1.5rem; }
+
+.pc-mini { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 4px 0 2px 0; }
+.pc-mini th { color: var(--text2); font-weight: 600; text-align: right; padding: 6px 8px; border-bottom: 1.5px solid var(--border); }
+.pc-mini td { text-align: right; padding: 6px 8px; border-bottom: 1px solid var(--grid); }
+.pc-mini :is(th, td):first-child { text-align: left; }
+.pc-mini tfoot td { font-weight: 700; border-bottom: 0; }
+
+/* ---------- "Select period" filter bars ---------- */
+[class*="st-key-filterbar-"] { background: var(--w-card); border: 1.5px solid var(--w-field_border);
+  border-left: 4px solid var(--w-accent); border-radius: var(--radius); padding: 10px 16px 12px 16px; margin: 6px 0 14px 0; }
+[data-testid="stSidebar"] [class*="st-key-filterbar-"] { padding: 10px 12px; }
+.pc-filter-title { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--text2); }
+
+/* ---------- form controls: visible border (>= 3:1), distinct fill, bold label, hover and focus ----------
+   Streamlit's react-aria widgets. Colours come from --w-* (set for dark, pre-filtered for light, raw light on the
+   pop-up layer, which renders outside the app root and is not inverted). */
+[data-testid="stWidgetLabel"] p { font-weight: 700 !important; color: var(--w-text) !important; font-size: 0.92rem !important; }
+:is([data-testid="stSelectbox"], [data-testid="stMultiSelect"]) > div > [role="group"],
+[data-testid="stTextInput"] [data-baseweb="input"], [data-testid="stNumberInput"] [data-baseweb="input"] {
+  background: var(--w-field) !important; border: 2px solid var(--w-field_border) !important; border-radius: 8px !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+:is([data-testid="stSelectbox"], [data-testid="stMultiSelect"]) > div > [role="group"]:hover { border-color: var(--w-accent) !important; }
+:is([data-testid="stSelectbox"], [data-testid="stMultiSelect"]) > div > [role="group"]:focus-within {
+  border-color: var(--w-accent) !important; box-shadow: 0 0 0 3px var(--w-opt_hover) !important; }
+:is([data-testid="stSelectbox"], [data-testid="stMultiSelect"]) input { color: var(--w-text) !important; font-weight: 600; }
+:is([data-testid="stSelectbox"], [data-testid="stMultiSelect"]) [role="group"] > button { color: var(--w-text) !important; }
+:is([data-testid="stSelectbox"], [data-testid="stMultiSelect"]) [role="group"] > button:last-child svg {
+  width: 1.5rem !important; height: 1.5rem !important; }
+[data-testid="stMultiSelectTagsContainer"] > span[role="group"] { background: var(--w-opt_hover) !important;
+  color: var(--w-text) !important; border: 1px solid var(--w-accent) !important; }
+/* open dropdown menu: own fill, border and shadow; hover and selected options highlighted */
+body > div:has([role="listbox"]) [role="listbox"], [data-testid$="VirtualDropdown"] {
+  background: var(--w-menu) !important; border: 1.5px solid var(--w-field_border) !important; border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45) !important; }
+body > div:has([role="listbox"]) > div { background: transparent !important; }
+[role="listbox"] [role="option"] { color: var(--w-text) !important; }
+[role="listbox"] [role="option"]:is(:hover, [data-hovered="true"], [data-focused="true"]) { background: var(--w-opt_hover) !important; }
+[role="listbox"] [role="option"][aria-selected="true"] { font-weight: 700; box-shadow: inset 4px 0 0 var(--w-accent);
+  color: var(--w-text) !important; }
+[role="listbox"] [role="option"][aria-selected="true"]:not([data-hovered="true"]) {
+  background: color-mix(in srgb, var(--w-opt_hover) 55%, transparent) !important; }
+/* sliders and select-sliders: larger ringed thumbs, readable values */
+[data-testid="stSlider"] div:has(> div > input[type="range"]) { width: 18px !important; height: 18px !important;
+  background: var(--w-accent) !important; border: 2px solid var(--w-text) !important; box-shadow: 0 0 0 2px var(--w-page); }
+[data-testid="stSlider"] div:has(> div > input[type="range"]):hover,
+[data-testid="stSlider"] div:has(> div > input[type="range"]:focus-visible) { box-shadow: 0 0 0 6px var(--w-opt_hover); }
+[data-testid="stSliderThumbValue"] p, [data-testid="stSliderTickBar"] p { color: var(--w-text) !important; font-weight: 600; }
+/* radio: each option is an outlined pill; the chosen one is accent-bordered and bold */
+[data-testid="stRadioGroup"] { gap: 8px; }
+[data-testid="stRadioOption"] { background: var(--w-field); border: 2px solid var(--w-field_border); border-radius: 999px;
+  padding: 3px 12px 3px 8px; margin: 0 !important; transition: border-color 0.15s ease; }
+[data-testid="stRadioOption"]:hover { border-color: var(--w-accent); }
+[data-testid="stRadioOption"]:has(input:checked) { border-color: var(--w-accent); background: var(--w-opt_hover); }
+[data-testid="stRadioOption"]:has(input:checked) p { font-weight: 700; }
+[data-testid="stRadioOption"]:has(input:focus-visible) { outline: 2px solid var(--w-accent); outline-offset: 2px; }
+/* checkbox box and toggle track */
+[data-testid="stCheckbox"] label > span + div { border: 2px solid var(--w-field_border) !important; }
+[data-testid="stCheckbox"] label:hover > span + div { border-color: var(--w-accent) !important; }
+[data-testid="stCheckbox"] label:has(input:focus-visible) > span + div { box-shadow: 0 0 0 3px var(--w-opt_hover); }
+[data-testid="stCheckbox"] [data-testid="stWidgetLabel"] p { font-weight: 600 !important; }
+/* segmented controls / pills */
+[data-testid="stButtonGroup"] button[data-variant] { border: 2px solid var(--w-field_border) !important;
+  background: var(--w-field) !important; color: var(--w-text) !important; }
+[data-testid="stButtonGroup"] button[data-variant]:hover { border-color: var(--w-accent) !important; }
+[data-testid="stButtonGroup"] button[aria-checked="true"] { border-color: var(--w-accent) !important;
+  background: var(--w-opt_hover) !important; }
+[data-testid="stButtonGroup"] button[aria-checked="true"] p { font-weight: 700; }
+
+/* ---------- chart hover pop-ups: never clipped by a card or container ---------- */
+[class*="st-key-card-"], [class*="st-key-filterbar-"], [data-testid="stPlotlyChart"], .stPlotlyChart, .js-plotly-plot,
+.js-plotly-plot .plot-container, .js-plotly-plot .svg-container { overflow: visible !important; }
+[class*="st-key-card-"]:hover, [data-testid="stPlotlyChart"]:hover { position: relative; z-index: 20; }
+.js-plotly-plot .hoverlayer { pointer-events: none; }
+
+/* ---------- motion: short fade/slide-in, hover lift, tab fade. Nothing loops. ---------- */
+@keyframes pc-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes pc-fade { from { opacity: 0; } to { opacity: 1; } }
+[class*="st-key-card-"], .pc-card, .pc-perf-cell, .pc-header { animation: pc-in 0.26s ease-out both; }
+.stTabs [data-testid="stTabPanel"] { animation: pc-fade 0.22s ease-out both; }
+.pc-kv .v, .pc-perf-cell .val, .pc-price, [data-testid="stMetricValue"] { animation: pc-fade 0.3s ease-out both; }
+[class*="st-key-card-"], .pc-card, .pc-perf-cell { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+[class*="st-key-card-"]:hover, .pc-card:hover, .pc-perf-cell:hover { transform: translateY(-2px); box-shadow: var(--lift); }
+.stTabs [data-testid="stTab"] { transition: color 0.15s ease; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  [class*="st-key-card-"]:hover, .pc-card:hover, .pc-perf-cell:hover, .pc-tile:hover { transform: none; }
+}
+
+/* ---------- narrow screens ---------- */
+@media (max-width: 1100px) { .pc-tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 900px) {
+  .pc-perf { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .pc-kv { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pc-header h1 { font-size: 1.8rem; }
+  .pc-price { font-size: 2.2rem; }
+}
+@media (max-width: 480px) {
+  .block-container { padding-left: 0.75rem; padding-right: 0.75rem; }
+  .pc-header h1 { font-size: 1.5rem; }
+  .pc-logo { height: 30px; }
+  .pc-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .pc-mini { font-size: 0.8rem; }
+  .pc-mini th, .pc-mini td { padding: 5px 4px; }
+  .pc-brand .pc-logo + h1 { border-left: 0; padding-left: 0; }
+  .pc-price { font-size: 1.9rem; }
+  .pc-change { font-size: 1.05rem; }
+  .pc-perf-cell { padding: 8px 4px; }
+  .pc-perf-cell .val { font-size: 0.9rem; }
+  .stTabs [role="tablist"] { gap: 12px; overflow-x: auto; }
+  /* seasonals heatmap: 12 month cells are too narrow for numbers on a phone; colour stays, values are in hover */
+  .stPlotlyChart g.heatmap-label { display: none; }
+}

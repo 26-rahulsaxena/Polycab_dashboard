@@ -1,0 +1,71 @@
+period,segment,metric,value,series_break,note,to_verify
+Mar'24,Wires and Cables,revenue_cr,4864.67,False,,False
+Jun'24,Wires and Cables,revenue_cr,3942.13,False,,False
+Sep'24,Wires and Cables,revenue_cr,4771.97,False,,False
+Dec'24,Wires and Cables,revenue_cr,4384.63,False,,False
+Mar'25,Wires and Cables,revenue_cr,6019.07,False,,False
+Jun'25,Wires and Cables,revenue_cr,5228.65,False,,False
+Sep'25,Wires and Cables,revenue_cr,5691.13,False,,False
+Dec'25,Wires and Cables,revenue_cr,6852.63,False,,False
+Mar'26,Wires and Cables,revenue_cr,7762.01,False,,False
+Jun'26,Wires and Cables,revenue_cr,7201.79,False,,False
+Sep'26,Wires and Cables,revenue_cr,8376.84,False,,True
+Mar'24,FMEG,revenue_cr,358.14,False,,False
+Jun'24,FMEG,revenue_cr,385.49,False,,False
+Sep'24,FMEG,revenue_cr,397.51,False,,False
+Dec'24,FMEG,revenue_cr,423.18,False,,False
+Mar'25,FMEG,revenue_cr,476.0,False,,False
+Jun'25,FMEG,revenue_cr,454.23,False,,False
+Sep'25,FMEG,revenue_cr,452.18,False,,False
+Dec'25,FMEG,revenue_cr,499.78,False,,False
+Mar'26,FMEG,revenue_cr,663.14,False,,False
+Jun'26,FMEG,revenue_cr,761.15,False,,False
+Sep'26,FMEG,revenue_cr,993.11,False,,True
+Mar'24,EPC,revenue_cr,502.23,True,Others replaced by EPC from FY24; not comparable,False
+Jun'24,EPC,revenue_cr,519.42,True,Others replaced by EPC from FY24; not comparable,False
+Sep'24,EPC,revenue_cr,496.72,True,Others replaced by EPC from FY24; not comparable,False
+Dec'24,EPC,revenue_cr,498.5,True,Others replaced by EPC from FY24; not comparable,False
+Mar'25,EPC,revenue_cr,602.83,True,Others replaced by EPC from FY24; not comparable,False
+Jun'25,EPC,revenue_cr,347.41,True,Others replaced by EPC from FY24; not comparable,False
+Sep'25,EPC,revenue_cr,402.39,True,Others replaced by EPC from FY24; not comparable,False
+Dec'25,EPC,revenue_cr,406.9,True,Others replaced by EPC from FY24; not comparable,False
+Mar'26,EPC,revenue_cr,509.8,True,Others replaced by EPC from FY24; not comparable,False
+Jun'26,EPC,revenue_cr,307.74,True,Others replaced by EPC from FY24; not comparable,False
+Sep'26,EPC,revenue_cr,617.08,True,Others replaced by EPC from FY24; not comparable,True
+Sep'24,Others,revenue_cr,585.2,True,Others replaced by EPC from FY24; not comparable,False
+Dec'24,Others,revenue_cr,498.5,True,Others replaced by EPC from FY24; not comparable,False
+Mar'24,Wires and Cables,pbit_margin_pct,15.14,False,,False
+Jun'24,Wires and Cables,pbit_margin_pct,12.6,False,,False
+Sep'24,Wires and Cables,pbit_margin_pct,12.41,False,,False
+Dec'24,Wires and Cables,pbit_margin_pct,13.46,False,,False
+Mar'25,Wires and Cables,pbit_margin_pct,15.1,False,,False
+Jun'25,Wires and Cables,pbit_margin_pct,14.69,False,,False
+Sep'25,Wires and Cables,pbit_margin_pct,15.1,False,,False
+Dec'25,Wires and Cables,pbit_margin_pct,12.15,False,,False
+Mar'26,Wires and Cables,pbit_margin_pct,13.12,False,,False
+Jun'26,Wires and Cables,pbit_margin_pct,13.32,False,,False
+Sep'26,Wires and Cables,pbit_margin_pct,14.19,False,,True
+Mar'24,FMEG,pbit_margin_pct,-12.82,False,,False
+Jun'24,FMEG,pbit_margin_pct,-0.73,False,,False
+Sep'24,FMEG,pbit_margin_pct,-6.35,False,,False
+Dec'24,FMEG,pbit_margin_pct,-3.02,False,,False
+Mar'25,FMEG,pbit_margin_pct,0.4,False,,False
+Jun'25,FMEG,pbit_margin_pct,2.1,False,,False
+Sep'25,FMEG,pbit_margin_pct,0.49,False,,False
+Dec'25,FMEG,pbit_margin_pct,2.77,False,,False
+Mar'26,FMEG,pbit_margin_pct,4.41,False,,False
+Jun'26,FMEG,pbit_margin_pct,7.97,False,,False
+Sep'26,FMEG,pbit_margin_pct,10.13,False,,True
+Mar'24,EPC,pbit_margin_pct,8.87,True,Others replaced by EPC from FY24; not comparable,False
+Jun'24,EPC,pbit_margin_pct,11.02,True,Others replaced by EPC from FY24; not comparable,False
+Sep'24,EPC,pbit_margin_pct,10.35,True,Others replaced by EPC from FY24; not comparable,False
+Dec'24,EPC,pbit_margin_pct,11.15,True,Others replaced by EPC from FY24; not comparable,False
+Mar'25,EPC,pbit_margin_pct,9.36,True,Others replaced by EPC from FY24; not comparable,False
+Jun'25,EPC,pbit_margin_pct,7.7,True,Others replaced by EPC from FY24; not comparable,False
+Sep'25,EPC,pbit_margin_pct,18.14,True,Others replaced by EPC from FY24; not comparable,False
+Dec'25,EPC,pbit_margin_pct,6.68,True,Others replaced by EPC from FY24; not comparable,False
+Mar'26,EPC,pbit_margin_pct,7.58,True,Others replaced by EPC from FY24; not comparable,False
+Jun'26,EPC,pbit_margin_pct,10.99,True,Others replaced by EPC from FY24; not comparable,False
+Sep'26,EPC,pbit_margin_pct,7.19,True,Others replaced by EPC from FY24; not comparable,True
+Sep'24,Others,pbit_margin_pct,11.81,True,Others replaced by EPC from FY24; not comparable,False
+Dec'24,Others,pbit_margin_pct,11.15,True,Others replaced by EPC from FY24; not comparable,False

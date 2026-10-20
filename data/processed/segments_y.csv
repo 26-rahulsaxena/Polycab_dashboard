@@ -1,0 +1,37 @@
+period,segment,metric,value,series_break,note
+FY21,Wires and Cables,revenue_cr,7591.09,False,
+FY22,Wires and Cables,revenue_cr,10793.81,False,
+FY23,Wires and Cables,revenue_cr,12777.5,False,
+FY24,Wires and Cables,revenue_cr,16107.25,False,
+FY25,Wires and Cables,revenue_cr,19236.63,False,
+FY26,Wires and Cables,revenue_cr,25534.42,False,
+FY21,FMEG,revenue_cr,1034.11,False,
+FY22,FMEG,revenue_cr,1254.38,False,
+FY23,FMEG,revenue_cr,1260.74,False,
+FY24,FMEG,revenue_cr,1298.82,False,
+FY25,FMEG,revenue_cr,1682.18,False,
+FY26,FMEG,revenue_cr,2069.33,False,
+FY24,EPC,revenue_cr,1100.81,True,Others replaced by EPC from FY24; not comparable
+FY25,EPC,revenue_cr,1919.24,True,Others replaced by EPC from FY24; not comparable
+FY26,EPC,revenue_cr,1666.5,True,Others replaced by EPC from FY24; not comparable
+FY21,Others,revenue_cr,299.76,True,Others replaced by EPC from FY24; not comparable
+FY22,Others,revenue_cr,370.18,True,Others replaced by EPC from FY24; not comparable
+FY23,Others,revenue_cr,464.71,True,Others replaced by EPC from FY24; not comparable
+FY21,Wires and Cables,pbit_margin_pct,11.95,False,
+FY22,Wires and Cables,pbit_margin_pct,9.77,False,
+FY23,Wires and Cables,pbit_margin_pct,13.09,False,
+FY24,Wires and Cables,pbit_margin_pct,14.66,False,
+FY25,Wires and Cables,pbit_margin_pct,13.62,False,
+FY26,Wires and Cables,pbit_margin_pct,13.62,False,
+FY21,FMEG,pbit_margin_pct,5.47,False,
+FY22,FMEG,pbit_margin_pct,1.56,False,
+FY23,FMEG,pbit_margin_pct,-0.44,False,
+FY24,FMEG,pbit_margin_pct,-7.25,False,
+FY25,FMEG,pbit_margin_pct,-2.31,False,
+FY26,FMEG,pbit_margin_pct,2.65,False,
+FY24,EPC,pbit_margin_pct,11.34,True,Others replaced by EPC from FY24; not comparable
+FY25,EPC,pbit_margin_pct,9.41,True,Others replaced by EPC from FY24; not comparable
+FY26,EPC,pbit_margin_pct,9.93,True,Others replaced by EPC from FY24; not comparable
+FY21,Others,pbit_margin_pct,15.22,True,Others replaced by EPC from FY24; not comparable
+FY22,Others,pbit_margin_pct,13.48,True,Others replaced by EPC from FY24; not comparable
+FY23,Others,pbit_margin_pct,11.13,True,Others replaced by EPC from FY24; not comparable

@@ -1,0 +1,126 @@
+kpi,category,period,value,value_low,value_high,unit,note,xlsx_value,pdf_vs_xlsx,source_section,source_page
+Domestic organised W&C market share,Market share,FY19,,18.0,19.0,%,Management estimate,,,Deep Dive - Competitive positioning,44
+Domestic organised W&C market share,Market share,FY25,,26.0,27.0,%,Management estimate,,,Deep Dive - Competitive positioning,44
+Domestic organised W&C market share,Market share,FY26,,30.0,31.0,%,Management estimate; also Business Overview p2,,,Deep Dive - Competitive positioning,44
+Total W&C market share,Market share,FY26,,22.0,23.0,%,Presentation estimate; different denominator from organised share,,,Deep Dive - Competitive positioning,44
+Domestic string-inverter market share,Market share,Jul 2026,20.0,,,%,'about 20%',,,Business Overview (Jul 2026),3
+Unorganised share of Indian W&C market,Market share,Jul 2026,26.0,,,%,'roughly 26%',,,Business Overview (Jul 2026),2
+Export share of revenue,Exports,FY23,9.8,,,%,International business share,,,Guidance Report (as of Aug 2026),10
+Export share of revenue,Exports,FY26,5.4,,,%,,,,Growth Catalysts (Aug 2026),6
+Export share of revenue,Exports,Q1 FY26,5.2,,,%,,,,Deep Dive - Past financials,33
+Export share of revenue,Exports,Q1 FY27,3.3,,,%,,,,Deep Dive - Past financials,33
+Export revenue,Exports,FY26,1569.5,,,Rs cr,,,,Growth Catalysts (Aug 2026),6
+International revenue,Exports,Q1 FY27,267.1,,,Rs cr,-13% YoY,,,Deep Dive - Past financials,33
+International revenue growth YoY,Exports,Q4 FY26,18.0,,,%,,,,Business Overview (Jul 2026),3
+Countries served,Exports,FY19,48.0,,,count,,,,Business Overview (Jul 2026),3
+Countries served,Exports,FY26,94.0,,,count,10 added in FY26,,,Deep Dive - Key growth triggers,38
+North America share of international revenue,Exports,FY26,39.0,,,%,Annual report,,,Deep Dive - Risk analysis,49
+North America share of international revenue,Exports,Q1 FY27,,45.0,50.0,%,Call commentary,,,Deep Dive - Risk analysis,49
+Export EBITDA margin (historical),Exports,Q3 FY26 call,15.0,,,%,'at least approximately 15%',,,Deep Dive - What the company does,21
+"W&C annual capacity (Halol, Daman)",Capacity,FY26,6.0,,,million km,,,,Deep Dive - Business segments,25
+"Fan annual capacity (Halol, Roorkee)",Capacity,Jul 2026,9.0,,,million units,,,,Business Overview (Jul 2026),3
+Capacity utilisation,Utilisation,Q3 FY26,,,,%,'early 80s' (call); value not stated exactly,,,Deep Dive - Key growth triggers,38
+Capacity utilisation,Utilisation,Q4 FY26,,,,%,'mid-70s' (call); value not stated exactly,,,Deep Dive - Key growth triggers,38
+Capacity utilisation,Utilisation,FY26,,70.0,75.0,%,Q4 FY26 call measure,,PDF internal conflict,Deep Dive - Key growth triggers,38
+Capacity utilisation,Utilisation,FY26,79.0,,,%,Annual report business review; not reconciled to call measure,,PDF internal conflict,Deep Dive - Key growth triggers,38
+Manufacturing facilities,Footprint,FY26,26.0,,,count,,,,Deep Dive - History,19
+Warehouses and depots,Footprint,FY26,35.0,,,count,,,,Deep Dive - History,19
+W&C SKUs,Footprint,FY26,10000.0,,,count,approximately,,,Deep Dive - Business segments,25
+Authorised dealers and distributors,Distribution,Jul 2026,3900.0,,,count,"'3,900-plus'",,,Business Overview (Jul 2026),2
+Retail outlets,Distribution,Jul 2026,190000.0,,,count,"'190,000' (more than)",,,Business Overview (Jul 2026),2
+FMEG-specific dealers,Distribution,Jul 2026,2900.0,,,count,"'2,900-plus'",,,Business Overview (Jul 2026),2
+Dealers common to W&C and FMEG,Distribution,FY26,46.0,,,%,,,,Deep Dive - Competitive positioning,43
+Products listed on e-commerce,Distribution,Jul 2026,600.0,,,count,'over 600',,,Business Overview (Jul 2026),3
+Advertisement and sales-promotion spend,Advertising,FY25,120.9,,,Rs cr,FY26 presentation,,,Deep Dive - Risk analysis,49
+Advertisement and sales-promotion spend,Advertising,FY26,190.2,,,Rs cr,FY26 presentation,,,Deep Dive - Risk analysis,49
+A&P spend as % of B2C revenue,Advertising,9M FY24,4.2,,,%,,,,Guidance Report (as of Aug 2026),9
+A&P spend as % of B2C revenue,Advertising,Q3 FY26,1.5,,,%,'around 1.5%',,,Guidance Report (as of Aug 2026),9
+Working capital days (management),Working capital,Q1 FY25,64.0,,,days,Management measure,,definition differs,Guidance Report (as of Aug 2026),9
+Working capital days (management),Working capital,Q4 FY26,25.0,,,days,Temporary: LC-backed payables; mgmt says reverts to 45-50,38.55,definition differs; FY26 payables caveat,Forensic Report - findings,13
+Working capital days (management),Working capital,Q1 FY27,15.0,,,days,Management measure,,definition differs,Guidance Report (as of Aug 2026),9
+Acceptances,Working capital,Jun 2026,5140.8,,,Rs cr,Not deducted in mgmt net cash,,,Deep Dive - Risk analysis,47
+Bank borrowings (current + non-current),Working capital,Jun 2026,105.2,,,Rs cr,approximately,,,Deep Dive - Risk analysis,47
+Inventory,Working capital,Jun 2026,6204.4,,,Rs cr,,,,Deep Dive - Risk analysis,47
+Receivables,Working capital,Jun 2026,3319.4,,,Rs cr,,,,Deep Dive - Risk analysis,47
+Net cash (management definition),Liquidity,FY26,4194.0,,,Rs cr,Cash + bank + investments - debt,882.47,definition differs: xlsx cash only (882.47 = 390.34 cash eq + 492.13 other bank),Deep Dive - What the company does,23
+Net cash (management definition),Liquidity,Jun 2026,3990.0,,,Rs cr,Excludes acceptances,,,Deep Dive - Risk analysis,47
+Operating cash flow,Liquidity,Q1 FY26,1068.8,,,Rs cr,,,,Deep Dive - Risk analysis,47
+Operating cash flow,Liquidity,Q1 FY27,818.5,,,Rs cr,,,,Deep Dive - Risk analysis,47
+Unhedged USD payables,Liquidity,FY25,606.4,,,Rs cr,,,,Deep Dive - Risk analysis,48
+Unhedged USD payables,Liquidity,FY26,2054.45,,,Rs cr,,,,Deep Dive - Risk analysis,48
+CWIP,Capex,FY23,250.8,,,Rs cr,,250.77,match,Forensic Report - findings,13
+CWIP,Capex,FY25,708.1,,,Rs cr,,708.14,match,Forensic Report - findings,13
+CWIP,Capex,FY26,1139.26,,,Rs cr,,1139.26,match,Deep Dive - Risk analysis,48
+Remaining capital commitments,Capex,FY26,1229.62,,,Rs cr,approximately,,,Deep Dive - Risk analysis,48
+Capex,Capex,FY22,500.0,,,Rs cr,Rs 300 cr regular + Rs 200 cr new office,526.52,MISMATCH,Guidance Report (as of Aug 2026),10
+Capex,Capex,FY23,458.4,,,Rs cr,Guidance tracker figure,477.45,MISMATCH,Guidance Report (as of Aug 2026),10
+Capex,Capex,FY24,858.0,,,Rs cr,Guidance tracker figure,852.96,MISMATCH,Guidance Report (as of Aug 2026),9
+Capex,Capex,FY25,960.0,,,Rs cr,Guidance tracker figure,969.63,MISMATCH,Guidance Report (as of Aug 2026),9
+Capex,Capex,FY26,1479.9,,,Rs cr,"Growth catalysts; AR segment note 1,479.93",1480.33,match,Growth Catalysts (Aug 2026),6
+Capex,Capex,FY26,1350.0,,,Rs cr,Project Spring update slide; PDF rejects it,1480.33,MISMATCH,Deep Dive - Key growth triggers,39
+Capex,Capex,Q1 FY27,320.0,,,Rs cr,,,,Guidance Report (as of Aug 2026),8
+Top customer share of sales,Customer concentration,FY26,4.0,,,%,,,,Deep Dive - Risk analysis,48
+Top 5 customers share of sales,Customer concentration,FY26,13.0,,,%,,,,Deep Dive - Risk analysis,48
+Top 10 customers share of sales,Customer concentration,FY26,21.0,,,%,,,,Deep Dive - Risk analysis,48
+W&C volume growth,Volume,FY26,18.0,,,%,vs market ~11-12%,,,Deep Dive - Past financials,33
+Domestic W&C revenue growth,Volume,Q2 FY26,21.0,,,%,Volume growth 'high-teens',,,Deep Dive - Past financials,32
+Domestic W&C revenue growth,Volume,Q3 FY26,59.0,,,%,,,,Deep Dive - Past financials,33
+Domestic W&C volume growth,Volume,Q3 FY26,40.0,,,%,Incl. wire pre-stocking,,,Deep Dive - Past financials,33
+W&C revenue growth,Volume,Q4 FY26,30.0,,,%,Volume growth 'low single digits',,,Deep Dive - Past financials,33
+Cumulative W&C price increases Jan-Mar 2026,Volume,Q4 FY26,,18.0,19.0,%,,,,Deep Dive - Past financials,33
+Domestic W&C value growth,Volume,Q1 FY27,43.0,,,%,Call; total segment ~39%,,,Deep Dive - Past financials,33
+Solar volume growth,FMEG,FY26,3.5,,,x,Annual report; calls say ~2x business growth,,,Deep Dive - Key growth triggers,40
+Inverters delivered,FMEG,FY26,350000.0,,,count,'more than'; ~1.6 GW installed,,,Deep Dive - Key growth triggers,40
+FMEG revenue growth YoY,FMEG,Q4 FY26,47.0,,,%,,,,Guidance Report (as of Aug 2026),9
+FMEG revenue growth YoY,FMEG,Q1 FY27,71.0,,,%,,,,Guidance Report (as of Aug 2026),9
+FMEG revenue,FMEG,Q1 FY27,761.2,,,Rs cr,,761.15,match,Deep Dive - Business segments,27
+FMEG EBIT,FMEG,Q1 FY27,60.6,,,Rs cr,,,,Deep Dive - Business segments,27
+FMEG EBIT margin,FMEG,Q1 FY26,2.1,,,%,,2.1,match,Growth Catalysts (Aug 2026),6
+FMEG EBIT margin,FMEG,Q1 FY27,8.0,,,%,,7.97,match,Growth Catalysts (Aug 2026),6
+FMEG EBIT margin,FMEG,FY23,-0.44,,,%,,-0.44,match,Guidance Report (as of Aug 2026),11
+FMEG EBIT margin,FMEG,FY24,-7.25,,,%,,-7.25,match,Guidance Report (as of Aug 2026),11
+Premium share of FMEG portfolio,FMEG,Q1 FY27,25.0,,,%,"Fans ~33%, lighting ~38%",,,Deep Dive - Business segments,27
+W&C revenue,Segments,FY26,25200.0,,,Rs cr,+33%; rounded,25534.42,MISMATCH,Growth Catalysts (Aug 2026),6
+W&C PBIT,Segments,FY26,3478.12,,,Rs cr,"94.0% of gross segment PBIT 3,698.51",,,Deep Dive - Business segments,25
+W&C PBIT margin,Segments,FY24,14.66,,,%,,14.66,match,Guidance Report (as of Aug 2026),9
+W&C PBIT margin,Segments,FY25,13.62,,,%,,13.62,match,Guidance Report (as of Aug 2026),9
+W&C PBIT margin,Segments,FY26,13.62,,,%,,13.62,match,Guidance Report (as of Aug 2026),9
+EPC revenue,Segments,FY26,1666.5,,,Rs cr,"-13.2% YoY; Growth Catalysts rounds to 1,670",1666.5,match,Deep Dive - Business segments,28
+EPC PBIT,Segments,FY26,165.55,,,Rs cr,Ex ~Rs 30 cr one-off: 135.55 (8.1%),,,Deep Dive - Business segments,28
+EPC PBIT margin,Segments,FY24,11.34,,,%,,11.34,match,Guidance Report (as of Aug 2026),10
+EPC PBIT margin,Segments,FY25,9.41,,,%,,9.41,match,Guidance Report (as of Aug 2026),10
+EPC PBIT margin,Segments,FY26,9.93,,,%,,9.93,match,Guidance Report (as of Aug 2026),10
+EPC PBIT margin,Segments,Q2 FY26,18.1,,,%,Incl ~Rs 30 cr one-off; ~10% ex-gain,18.14,match,Guidance Report (as of Aug 2026),8
+EPC PBIT margin,Segments,Q3 FY26,6.7,,,%,,6.68,match,Guidance Report (as of Aug 2026),8
+EPC PBIT margin,Segments,Q4 FY26,7.6,,,%,,7.58,match,Guidance Report (as of Aug 2026),8
+EPC PBIT margin,Segments,Q1 FY27,11.0,,,%,,10.99,match,Guidance Report (as of Aug 2026),8
+EPC revenue,Segments,Q4 FY26,509.8,,,Rs cr,,509.8,match,Guidance Report (as of Aug 2026),8
+EPC revenue,Segments,Q1 FY27,307.7,,,Rs cr,,307.74,match,Guidance Report (as of Aug 2026),8
+EPC share of consolidated revenue,Segments,FY24,6.1,,,%,,,,Guidance Report (as of Aug 2026),9
+EPC share of consolidated revenue,Segments,FY25,8.6,,,%,,,,Guidance Report (as of Aug 2026),9
+EPC share of consolidated revenue,Segments,FY26,5.8,,,%,Presentation external mix rounds to 6%,,,Guidance Report (as of Aug 2026),9
+EPC share of consolidated revenue,Segments,Q1 FY27,3.7,,,%,,,,Guidance Report (as of Aug 2026),9
+External revenue mix: W&C,Segments,FY26,87.0,,,%,"Presentation, rounded",,,Deep Dive - Business segments,25
+External revenue mix: FMEG,Segments,FY26,7.0,,,%,"Presentation, rounded",,,Deep Dive - Business segments,25
+External revenue mix: EPC,Segments,FY26,6.0,,,%,"Presentation, rounded",,,Deep Dive - Business segments,25
+Inter-segment revenue elimination,Segments,FY26,355.54,,,Rs cr,Annual report,,,Deep Dive - Business segments,24
+Segment net operating assets: W&C,Segments,FY26,6161.63,,,Rs cr,Segment assets - liabilities (proxy),,,Deep Dive - Business segments,28
+Segment net operating assets: FMEG,Segments,FY26,432.59,,,Rs cr,proxy,,,Deep Dive - Business segments,28
+Segment net operating assets: EPC,Segments,FY25,1205.51,,,Rs cr,proxy,,,Deep Dive - Business segments,28
+Segment net operating assets: EPC,Segments,FY26,1386.35,,,Rs cr,proxy,,,Deep Dive - Business segments,28
+Category EBITDA margin: domestic cables,Segments,Q3 FY26 call,,9.0,12.0,%,"Historical range, management",,,Deep Dive - What the company does,21
+Category EBITDA margin: wires,Segments,Q3 FY26 call,,15.0,16.0,%,"Historical range, management",,,Deep Dive - What the company does,21
+EPC open order book,Orders,Jul 2026,11300.0,,,Rs cr,"'roughly Rs 113 billion', to execute over 3 yrs",,,Business Overview (Jul 2026),3
+BharatNet + RDSS order book,Orders,Q1 FY27,10900.0,,,Rs cr,'around',,,Guidance Report (as of Aug 2026),8
+EBITDA margin,Profitability,FY22,10.3,,,%,,10.37,match,Guidance Report (as of Aug 2026),11
+EBITDA margin,Profitability,FY23,13.1,,,%,,13.13,match,Guidance Report (as of Aug 2026),11
+EBITDA margin,Profitability,FY24,13.8,,,%,,13.81,match,Guidance Report (as of Aug 2026),11
+EBITDA margin,Profitability,FY25,13.2,,,%,,13.21,match,Guidance Report (as of Aug 2026),11
+EBITDA margin,Profitability,FY26,13.9,,,%,,13.87,match,Guidance Report (as of Aug 2026),11
+EBITDA margin,Profitability,Q1 FY27,13.8,,,%,,,,Guidance Report (as of Aug 2026),11
+"PAT (corporate presentation, restated)",Profitability,FY21,741.5,,,Rs cr,Restated after Nov 2021 Ryker divestment,841.81,MISMATCH,Deep Dive - Past financials,30
+Operating profit (corporate presentation),Profitability,FY23,1842.9,,,Rs cr,Presentation includes JV loss in EBITDA,1852.11,MISMATCH,Deep Dive - Past financials,30
+Dividend payout ratio,Shareholder,FY24,25.5,,,%,,,,Guidance Report (as of Aug 2026),8
+Dividend payout ratio,Shareholder,FY25,26.3,,,%,,,,Guidance Report (as of Aug 2026),8
+Dividend payout ratio,Shareholder,FY26,27.2,,,%,Proposed DPS Rs 47,,,Guidance Report (as of Aug 2026),8
+Promoter holding,Shareholder,FY26,61.5,,,%,,61.5,match,Deep Dive - Risk analysis,49

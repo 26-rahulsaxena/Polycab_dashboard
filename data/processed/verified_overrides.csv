@@ -1,0 +1,163 @@
+item,period,value,unit,source_file,page,previous_value,status,source_label,note,target_file,target_key
+Quarter Revenue,Sep'26,9898.9,Rs cr,Q2FY27- PPT.pdf,14,9898.9,verified,"Polycab investor presentation Q2 FY27, slide 14",,quarterly,revenue
+Quarter EBITDA,Sep'26,1422.5,Rs cr,Q2FY27- PPT.pdf,14,1422.5,verified,"Polycab investor presentation Q2 FY27, slide 14",,quarterly,operating_profit
+Quarter Other income,Sep'26,88.4,Rs cr,Q2FY27- PPT.pdf,14,88.37,verified,"Polycab investor presentation Q2 FY27, slide 14",,quarterly,other_income
+Quarter Depreciation,Sep'26,111.0,Rs cr,Q2FY27- PPT.pdf,14,111.04,verified,"Polycab investor presentation Q2 FY27, slide 14",,quarterly,depreciation
+Quarter Finance cost,Sep'26,93.6,Rs cr,Q2FY27- PPT.pdf,14,93.6,verified,"Polycab investor presentation Q2 FY27, slide 14",,quarterly,interest
+Quarter PBT,Sep'26,1306.2,Rs cr,Q2FY27- PPT.pdf,14,1306.22,verified,"Polycab investor presentation Q2 FY27, slide 14",,quarterly,pbt
+Quarter Income tax,Sep'26,316.2,Rs cr,Q2FY27- PPT.pdf,14,316.22,verified,"Polycab investor presentation Q2 FY27, slide 14",,quarterly,tax
+Quarter PAT,Sep'26,990.0,Rs cr,Q2FY27- PPT.pdf,14,990.0,verified,"Polycab investor presentation Q2 FY27, slide 14",,quarterly,pat
+Segment revenue: FMEG,Sep'26,993.1,Rs cr,Q2FY27- PPT.pdf,8,993.11,verified,"Polycab investor presentation Q2 FY27, slide 8","Rs 9,931 Mn",segments_q,FMEG|revenue_cr
+Segment PBIT margin: W&C,Sep'26,14.2,%,Q2FY27- PPT.pdf,6,14.19,verified,"Polycab investor presentation Q2 FY27, slide 6",,segments_q,Wires and Cables|pbit_margin_pct
+Segment revenue: W&C,Sep'26,,Rs cr,Q2FY27- PPT.pdf,6,8376.84,not_found,"Polycab investor presentation Q2 FY27, slide 6","slide gives only YoY growth (47%), no amount",segments_q,Wires and Cables|revenue_cr
+Segment revenue: EPC,Sep'26,,Rs cr,Q2FY27- PPT.pdf,10,617.08,not_found,"Polycab investor presentation Q2 FY27, slide 10","slide gives only YoY growth (53%), no amount",segments_q,EPC|revenue_cr
+Revenue from operations,FY22,12203.761,Rs cr,FY22- Annual report.pdf,84,12203.76,verified,"Polycab Annual Report FY22, p.84",,annual,revenue
+EBITDA,FY22,1265.2,Rs cr,FY22- Annual report.pdf,84,1265.2,verified,"Polycab Annual Report FY22, p.84",PBT + finance cost + depreciation - other income (P&L lines),annual,operating_profit
+PAT,FY22,845.231,Rs cr,FY22- Annual report.pdf,84,845.23,verified,"Polycab Annual Report FY22, p.84",Profit from continuing operations,annual,pat
+Revenue from operations,FY23,14107.778,Rs cr,FY23- Annual report.pdf,112,14107.78,verified,"Polycab Annual Report FY23, p.112",,annual,revenue
+EBITDA,FY23,1852.11,Rs cr,FY23- Annual report.pdf,112,1852.11,verified,"Polycab Annual Report FY23, p.112",PBT + finance cost + depreciation - other income (P&L lines),annual,operating_profit
+PAT,FY23,1282.2530000000002,Rs cr,FY23- Annual report.pdf,112,1282.25,verified,"Polycab Annual Report FY23, p.112",,annual,pat
+Revenue from operations,FY24,18039.444,Rs cr,FY24- Annual report.pdf,153,18039.44,verified,"Polycab Annual Report FY24, p.153",,annual,revenue
+EBITDA,FY24,2491.81,Rs cr,FY24- Annual report.pdf,153,2491.81,verified,"Polycab Annual Report FY24, p.153",PBT + finance cost + depreciation - other income (P&L lines),annual,operating_profit
+PAT,FY24,1802.917,Rs cr,FY24- Annual report.pdf,153,1802.92,verified,"Polycab Annual Report FY24, p.153",,annual,pat
+Revenue from operations,FY25,22408.313000000002,Rs cr,FY26- Annual report.pdf,318,22408.31,verified,"Polycab Annual Report FY26, p.318",,annual,revenue
+EBITDA,FY25,2960.24,Rs cr,FY26- Annual report.pdf,318,2960.24,verified,"Polycab Annual Report FY26, p.318",PBT + finance cost + depreciation - other income (P&L lines),annual,operating_profit
+PAT,FY25,2045.5369999999998,Rs cr,FY26- Annual report.pdf,318,2045.54,verified,"Polycab Annual Report FY26, p.318",,annual,pat
+Revenue from operations,FY26,28883.791999999998,Rs cr,FY26- Annual report.pdf,318,28883.79,verified,"Polycab Annual Report FY26, p.318",,annual,revenue
+EBITDA,FY26,4005.73,Rs cr,FY26- Annual report.pdf,318,4005.73,verified,"Polycab Annual Report FY26, p.318",PBT + finance cost + depreciation - other income (P&L lines),annual,operating_profit
+PAT,FY26,2708.427,Rs cr,FY26- Annual report.pdf,318,2708.43,verified,"Polycab Annual Report FY26, p.318",,annual,pat
+PAT,FY21,841.81,Rs cr,FY22- Annual report.pdf,84,841.81,verified,"Polycab Annual Report FY22, p.84",Continuing operations (comparative). Incl. discontinued Ryker: Rs 885.91 cr. Old report's 741.5 not used.,annual,pat
+Trade payables incl. acceptances,FY21,1348.03,Rs cr,FY22- Annual report.pdf,121,1348.03,verified,"Polycab Annual Report FY22, p.121",,balance_sheet,trade_payables
+Trade payables incl. acceptances,FY22,1217.53,Rs cr,FY22- Annual report.pdf,121,1217.53,verified,"Polycab Annual Report FY22, p.121",,balance_sheet,trade_payables
+Trade payables incl. acceptances,FY23,2032.64,Rs cr,FY23- Annual report.pdf,154,2032.64,verified,"Polycab Annual Report FY23, p.154",,balance_sheet,trade_payables
+Trade payables incl. acceptances,FY24,2863.32,Rs cr,FY24- Annual report.pdf,196,2863.33,verified,"Polycab Annual Report FY24, p.196",trade payables + acceptances (acceptances note on the facing page),balance_sheet,trade_payables
+Trade payables incl. acceptances,FY25,2735.76,Rs cr,FY26- Annual report.pdf,366,2735.76,verified,"Polycab Annual Report FY26, p.366",trade payables + acceptances (acceptances note on the facing page),balance_sheet,trade_payables
+Trade payables incl. acceptances,FY26,6064.43,Rs cr,FY26- Annual report.pdf,366,6064.43,verified,"Polycab Annual Report FY26, p.366",trade payables + acceptances (acceptances note on the facing page),balance_sheet,trade_payables
+Trade payables incl. acceptances,TTM Sep-26,8522.7,Rs cr,Q2FY27- PPT.pdf,15,1966.69,changed,"Polycab investor presentation Q2 FY27, slide 15","Sep-26: trade payables Rs 19,667 Mn + acceptances Rs 65,560 Mn; the dataset left acceptances out",balance_sheet,trade_payables
+Acceptances,FY22,636.5,Rs cr,FY22- Annual report.pdf,106,,changed,"Polycab Annual Report FY22, p.106",LC / supplier-finance payables to banks,kpis,Acceptances
+Acceptances,FY23,1225.8,Rs cr,FY23- Annual report.pdf,137,,changed,"Polycab Annual Report FY23, p.137",LC / supplier-finance payables to banks,kpis,Acceptances
+Acceptances,FY24,1862.0,Rs cr,FY24- Annual report.pdf,178,,changed,"Polycab Annual Report FY24, p.178",LC / supplier-finance payables to banks,kpis,Acceptances
+Acceptances,FY25,1306.2,Rs cr,FY26- Annual report.pdf,365,,changed,"Polycab Annual Report FY26, p.365",LC / supplier-finance payables to banks,kpis,Acceptances
+Acceptances,FY26,4265.6,Rs cr,FY26- Annual report.pdf,365,,changed,"Polycab Annual Report FY26, p.365",LC / supplier-finance payables to banks,kpis,Acceptances
+Acceptances,Jun 2026,5140.8,Rs cr,Q2FY27- PPT.pdf,15,5140.8,verified,"Polycab investor presentation Q2 FY27, slide 15",LC / supplier-finance payables to banks,kpis,Acceptances
+Acceptances,Sep 2026,6556.0,Rs cr,Q2FY27- PPT.pdf,15,,changed,"Polycab investor presentation Q2 FY27, slide 15",LC / supplier-finance payables to banks,kpis,Acceptances
+"Net working capital days (company, closing)",FY24,44,days,Q2FY27- PPT.pdf,17,,changed,"Polycab investor presentation Q2 FY27, slide 17",receivable 33 + inventory 91 - payable 81 days,kpis,"Net working capital days (company, closing)"
+"Net working capital days (company, closing)",FY25,44,days,Q2FY27- PPT.pdf,17,,changed,"Polycab investor presentation Q2 FY27, slide 17",receivable 38 + inventory 80 - payable 73 days,kpis,"Net working capital days (company, closing)"
+"Net working capital days (company, closing)",FY26,25,days,Q2FY27- PPT.pdf,17,,changed,"Polycab investor presentation Q2 FY27, slide 17",receivable 40 + inventory 78 - payable 93 days,kpis,"Net working capital days (company, closing)"
+"Net working capital days (company, closing)",Q1 FY27,15,days,Q2FY27- PPT.pdf,17,,changed,"Polycab investor presentation Q2 FY27, slide 17",receivable 35 + inventory 83 - payable 103 days,kpis,"Net working capital days (company, closing)"
+"Net working capital days (company, closing)",Q2 FY27,11,days,Q2FY27- PPT.pdf,17,,changed,"Polycab investor presentation Q2 FY27, slide 17",receivable 33 + inventory 86 - payable 108 days,kpis,"Net working capital days (company, closing)"
+Working capital days (management),Q4 FY26,25,days,Q2FY27- PPT.pdf,17,25.0,verified,"Polycab investor presentation Q2 FY27, slide 17",FY26 closing,kpis,Working capital days (management)
+Working capital days (management),Q1 FY27,15,days,Q2FY27- PPT.pdf,17,15.0,verified,"Polycab investor presentation Q2 FY27, slide 17",closing,kpis,Working capital days (management)
+Working capital days (management),Q1 FY25,,days,Q4FY25- PPT.pdf,28,64.0,not_found,"Polycab investor presentation Q4 FY25, slide 28",Q1 FY25 not in the documents supplied,kpis,Working capital days (management)
+Dividends paid,FY21,0.0,Rs cr,FY22- Annual report.pdf,86,0.0,verified,"Polycab Annual Report FY22, p.86",nil dividend paid in FY21 (genuine zero),annual,dividends_paid
+Dividends paid,FY22,-149.16,Rs cr,FY22- Annual report.pdf,86,-149.16,verified,"Polycab Annual Report FY22, p.86",,annual,dividends_paid
+Dividends paid,FY23,-209.449,Rs cr,FY24- Annual report.pdf,155,-209.45,verified,"Polycab Annual Report FY24, p.155",,annual,dividends_paid
+Dividends paid,FY24,-299.73,Rs cr,FY24- Annual report.pdf,155,-299.73,verified,"Polycab Annual Report FY24, p.155",,annual,dividends_paid
+Dividends paid,FY25,-451.084,Rs cr,FY26- Annual report.pdf,320,-451.08,verified,"Polycab Annual Report FY26, p.320",,annual,dividends_paid
+Dividends paid,FY26,-547.271,Rs cr,FY26- Annual report.pdf,320,-547.27,verified,"Polycab Annual Report FY26, p.320",,annual,dividends_paid
+Dividends paid,FY20,,Rs cr,FY22- Annual report.pdf,60,0.0,not_found,"Polycab Annual Report FY22, p.60",not zero: final FY19 dividend (30%) and interim FY20 dividend (70%) were declared; cash amount not stated,annual,dividends_paid
+Dividends paid,FY19,,Rs cr,FY22- Annual report.pdf,60,0.0,not_found,"Polycab Annual Report FY22, p.60",FY19 cash flow not in the documents supplied,annual,dividends_paid
+Dividend per share,FY26,47.0,Rs/share,FY26- Annual report.pdf,409,,changed,"Polycab Annual Report FY26, p.409","final dividend recommended 06 May 2026, subject to shareholder approval",kpis,Dividend per share
+Dividend per share,FY19,3.0,Rs/share,FY26- Annual report.pdf,70,,changed,"Polycab Annual Report FY26, p.70",,kpis,Dividend per share
+Dividend payout ratio,FY24,25.5,%,Q4FY26- PPT.pdf,17,25.5,verified,"Polycab investor presentation Q4 FY26, slide 17",company figure; FY26 '~27.2%',kpis,Dividend payout ratio
+Dividend payout ratio,FY25,26.3,%,Q4FY26- PPT.pdf,17,26.3,verified,"Polycab investor presentation Q4 FY26, slide 17",company figure; FY26 '~27.2%',kpis,Dividend payout ratio
+Dividend payout ratio,FY26,27.2,%,Q4FY26- PPT.pdf,17,27.2,verified,"Polycab investor presentation Q4 FY26, slide 17",company figure; FY26 '~27.2%',kpis,Dividend payout ratio
+Cash from operations,FY26,3810.667,Rs cr,FY26- Annual report.pdf,319,3810.67,verified,"Polycab Annual Report FY26, p.319",,cash_flow,cash_from_operating
+Cash from operations,FY25,1808.534,Rs cr,FY26- Annual report.pdf,319,1808.53,verified,"Polycab Annual Report FY26, p.319",,cash_flow,cash_from_operating
+Cash from operations,TTM Sep-26,3690.97,Rs cr,Q2FY27- PPT.pdf,16,,changed,"Polycab investor presentation Q2 FY27, slide 16","H1 FY27 Rs 16,708 Mn + FY26 (AR FY26 p.319) - H1 FY26 Rs 17,905 Mn",cash_flow,cash_from_operating
+Capex (fixed-asset purchases),FY26,-1480.329,Rs cr,FY26- Annual report.pdf,319,-1480.33,verified,"Polycab Annual Report FY26, p.319",,cash_flow,capex_fixed_assets_purchased
+Capex (fixed-asset purchases),FY25,-969.634,Rs cr,FY26- Annual report.pdf,319,-969.63,verified,"Polycab Annual Report FY26, p.319",,cash_flow,capex_fixed_assets_purchased
+Capex,FY23,458.4,Rs cr,Q4FY24- PPT.pdf,26,458.4,verified,"Polycab investor presentation Q4 FY24, slide 26",company 'Capex spends',kpis,Capex
+Capex,FY24,858.0,Rs cr,Q4FY25- PPT.pdf,26,858.0,verified,"Polycab investor presentation Q4 FY25, slide 26",company 'Capex spends',kpis,Capex
+Capex,FY25,958.3,Rs cr,Q4FY25- PPT.pdf,26,960.0,changed,"Polycab investor presentation Q4 FY25, slide 26",company 'Capex spends',kpis,Capex
+Capex,FY26,1479.9,Rs cr,Q4FY26- PPT.pdf,27,1479.9,verified,"Polycab investor presentation Q4 FY26, slide 27",company 'Capex spends',kpis,Capex
+Capex,Q1 FY27,316.6,Rs cr,Q2FY27- PPT.pdf,16,320.0,changed,"Polycab investor presentation Q2 FY27, slide 16",company 'Capex spends',kpis,Capex
+Capex,Q2 FY27,292.4,Rs cr,Q2FY27- PPT.pdf,16,,changed,"Polycab investor presentation Q2 FY27, slide 16",company 'Capex spends',kpis,Capex
+CWIP,FY26,1139.259,Rs cr,FY26- Annual report.pdf,317,1139.26,verified,"Polycab Annual Report FY26, p.317",,balance_sheet,cwip
+CWIP,FY25,708.144,Rs cr,FY26- Annual report.pdf,317,708.14,verified,"Polycab Annual Report FY26, p.317",,balance_sheet,cwip
+Current investments,FY21,623.13,Rs cr,FY22- Annual report.pdf,84,0.0,changed,"Polycab Annual Report FY22, p.84",the dataset shows 0,balance_sheet,investments
+Current investments,FY22,764.05,Rs cr,FY22- Annual report.pdf,84,0.0,changed,"Polycab Annual Report FY22, p.84",the dataset shows 0,balance_sheet,investments
+Current investments,FY23,1350.49,Rs cr,FY24- Annual report.pdf,153,0.0,changed,"Polycab Annual Report FY24, p.153",the dataset shows 0,balance_sheet,investments
+Current investments,FY24,1822.42,Rs cr,FY24- Annual report.pdf,153,0.0,changed,"Polycab Annual Report FY24, p.153",the dataset shows 0,balance_sheet,investments
+Current investments,FY25,1749.04,Rs cr,FY26- Annual report.pdf,317,0.0,changed,"Polycab Annual Report FY26, p.317",the dataset shows 0,balance_sheet,investments
+Current investments,FY26,3404.82,Rs cr,FY26- Annual report.pdf,317,0.0,changed,"Polycab Annual Report FY26, p.317",the dataset shows 0,balance_sheet,investments
+Current investments,TTM Sep-26,4013.1,Rs cr,Q2FY27- PPT.pdf,15,,changed,"Polycab investor presentation Q2 FY27, slide 15",the dataset shows 0,balance_sheet,investments
+Non-controlling interest,FY26,118.193,Rs cr,FY26- Annual report.pdf,317,,changed,"Polycab Annual Report FY26, p.317",explains the 'other liabilities' residual (Rs 120 cr),balance_sheet,non_controlling_interest
+Non-controlling interest,FY25,81.769,Rs cr,FY26- Annual report.pdf,317,,changed,"Polycab Annual Report FY26, p.317",,balance_sheet,non_controlling_interest
+Net cash (management definition),FY23,1891.2,Rs cr,Q4FY24- PPT.pdf,26,,changed,"Polycab investor presentation Q4 FY24, slide 26",cash & equivalents + investments + non-current deposits - debt,kpis,Net cash (management definition)
+Net cash (management definition),FY24,2140.8,Rs cr,Q4FY25- PPT.pdf,26,,changed,"Polycab investor presentation Q4 FY25, slide 26",cash & equivalents + investments + non-current deposits - debt,kpis,Net cash (management definition)
+Net cash (management definition),FY25,2457.2,Rs cr,Q4FY25- PPT.pdf,26,,changed,"Polycab investor presentation Q4 FY25, slide 26",cash & equivalents + investments + non-current deposits - debt,kpis,Net cash (management definition)
+Net cash (management definition),FY26,4194.0,Rs cr,Q4FY26- PPT.pdf,27,4194.0,verified,"Polycab investor presentation Q4 FY26, slide 27",cash & equivalents + investments + non-current deposits - debt,kpis,Net cash (management definition)
+Net cash (management definition),Jun 2026,3990.0,Rs cr,Q2FY27- PPT.pdf,16,3990.0,verified,"Polycab investor presentation Q2 FY27, slide 16",cash & equivalents + investments + non-current deposits - debt,kpis,Net cash (management definition)
+Net cash (management definition),Sep 2026,4519.9,Rs cr,Q2FY27- PPT.pdf,16,,changed,"Polycab investor presentation Q2 FY27, slide 16",cash & equivalents + investments + non-current deposits - debt,kpis,Net cash (management definition)
+Operating cash flow,Q1 FY27,818.6,Rs cr,Q2FY27- PPT.pdf,16,818.5,verified,"Polycab investor presentation Q2 FY27, slide 16",,kpis,Operating cash flow
+Operating cash flow,Q1 FY26,1068.8,Rs cr,Q2FY27- PPT.pdf,16,1068.8,verified,"Polycab investor presentation Q2 FY27, slide 16",H1 FY26 minus Q2 FY26,kpis,Operating cash flow
+Export share of revenue,FY23,9.8,%,Q4FY24- PPT.pdf,26,9.8,verified,"Polycab investor presentation Q4 FY24, slide 26","exports Rs 1,383.5 cr",kpis,Export share of revenue
+Export revenue,FY23,1383.5,Rs cr,Q4FY24- PPT.pdf,26,,changed,"Polycab investor presentation Q4 FY24, slide 26",,kpis,Export revenue
+Export share of revenue,FY24,8.0,%,Q4FY25- PPT.pdf,26,,changed,"Polycab investor presentation Q4 FY25, slide 26","exports Rs 1,436.0 cr",kpis,Export share of revenue
+Export revenue,FY24,1436.0,Rs cr,Q4FY25- PPT.pdf,26,,changed,"Polycab investor presentation Q4 FY25, slide 26",,kpis,Export revenue
+Export share of revenue,FY25,6.0,%,Q4FY25- PPT.pdf,26,,changed,"Polycab investor presentation Q4 FY25, slide 26","exports Rs 1,345.2 cr",kpis,Export share of revenue
+Export revenue,FY25,1345.2,Rs cr,Q4FY25- PPT.pdf,26,,changed,"Polycab investor presentation Q4 FY25, slide 26",,kpis,Export revenue
+Export share of revenue,FY26,5.4,%,Q4FY26- PPT.pdf,27,5.4,verified,"Polycab investor presentation Q4 FY26, slide 27","exports Rs 1,569.5 cr",kpis,Export share of revenue
+Export revenue,FY26,1569.5,Rs cr,Q4FY26- PPT.pdf,27,1569.5,verified,"Polycab investor presentation Q4 FY26, slide 27",,kpis,Export revenue
+Export share of revenue,Q4 FY26,4.4,%,Q4FY26- PPT.pdf,27,,changed,"Polycab investor presentation Q4 FY26, slide 27",exports Rs 385.9 cr,kpis,Export share of revenue
+Export share of revenue,Q1 FY27,3.3,%,Q2FY27- PPT.pdf,16,3.3,verified,"Polycab investor presentation Q2 FY27, slide 16",exports Rs 267.1 cr,kpis,Export share of revenue
+Export share of revenue,Q2 FY27,5.0,%,Q2FY27- PPT.pdf,16,,changed,"Polycab investor presentation Q2 FY27, slide 16",exports Rs 493.1 cr,kpis,Export share of revenue
+Export share of revenue,Q1 FY26,,%,Q2FY27- PPT.pdf,16,5.2,not_found,"Polycab investor presentation Q2 FY27, slide 16",Q1 FY26 not stated,kpis,Export share of revenue
+Domestic organised W&C market share,FY26,30-31,%,Q4FY26- PPT.pdf,5,30-31,verified,"Polycab investor presentation Q4 FY26, slide 5",,kpis,Domestic organised W&C market share
+Domestic organised W&C market share,FY25,26-27,%,Q4FY26- PPT.pdf,5,26-27,verified,"Polycab investor presentation Q4 FY26, slide 5",,kpis,Domestic organised W&C market share
+Domestic organised W&C market share,FY19,18,%,Q4FY26- PPT.pdf,6,18-19,changed,"Polycab investor presentation Q4 FY26, slide 6",,kpis,Domestic organised W&C market share
+Countries served,FY19,48,count,Q4FY26- PPT.pdf,10,48.0,verified,"Polycab investor presentation Q4 FY26, slide 10",,kpis,Countries served
+Countries served,FY20,53,count,Q4FY26- PPT.pdf,10,,changed,"Polycab investor presentation Q4 FY26, slide 10",,kpis,Countries served
+Countries served,FY21,58,count,Q4FY26- PPT.pdf,10,,changed,"Polycab investor presentation Q4 FY26, slide 10",,kpis,Countries served
+Countries served,FY22,63,count,Q4FY26- PPT.pdf,10,,changed,"Polycab investor presentation Q4 FY26, slide 10",,kpis,Countries served
+Countries served,FY23,70,count,Q4FY26- PPT.pdf,10,,changed,"Polycab investor presentation Q4 FY26, slide 10",,kpis,Countries served
+Countries served,FY24,79,count,Q4FY26- PPT.pdf,10,,changed,"Polycab investor presentation Q4 FY26, slide 10",,kpis,Countries served
+Countries served,FY25,84,count,Q4FY26- PPT.pdf,10,,changed,"Polycab investor presentation Q4 FY26, slide 10",,kpis,Countries served
+Countries served,FY26,94,count,Q4FY26- PPT.pdf,10,94.0,verified,"Polycab investor presentation Q4 FY26, slide 10",,kpis,Countries served
+North America share of international revenue,FY26,39,%,FY26- Annual report.pdf,11,39.0,verified,"Polycab Annual Report FY26, p.11",,kpis,North America share of international revenue
+"W&C annual capacity (Halol, Daman)",FY26,6,million km,FY26- Annual report.pdf,11,6.0,verified,"Polycab Annual Report FY26, p.11",,kpis,"W&C annual capacity (Halol, Daman)"
+"Fan annual capacity (Halol, Roorkee)",Jul 2026,9,million units,FY26- Annual report.pdf,11,9.0,verified,"Polycab Annual Report FY26, p.11",Halol 6 Mn + Roorkee 3 Mn (FY26),kpis,"Fan annual capacity (Halol, Roorkee)"
+Manufacturing facilities,FY26,26,count,FY26- Annual report.pdf,11,26.0,verified,"Polycab Annual Report FY26, p.11",,kpis,Manufacturing facilities
+Warehouses and depots,FY26,35,count,FY26- Annual report.pdf,11,35.0,verified,"Polycab Annual Report FY26, p.11",,kpis,Warehouses and depots
+Authorised dealers and distributors,Jul 2026,3900,count,FY26- Annual report.pdf,12,3900.0,verified,"Polycab Annual Report FY26, p.12","'3,900+', FY26",kpis,Authorised dealers and distributors
+Retail outlets,Jul 2026,190000,count,FY26- Annual report.pdf,12,190000.0,verified,"Polycab Annual Report FY26, p.12","'190,000+', FY26",kpis,Retail outlets
+FMEG-specific dealers,Jul 2026,2900,count,FY26- Annual report.pdf,54,2900.0,verified,"Polycab Annual Report FY26, p.54","'2,900+', FY26",kpis,FMEG-specific dealers
+Capacity utilisation,FY26,79,%,FY26- Annual report.pdf,52,79.0,verified,"Polycab Annual Report FY26, p.52",business review; p.12 gives 75-80%,kpis,Capacity utilisation
+Capacity utilisation (range),FY26 call,,%,FY26- Annual report.pdf,12,,not_found,"Polycab Annual Report FY26, p.12",the 70-75% call figure is not in the documents; the report gives 75-80% (p.12) and 79% (p.52),kpis,Capacity utilisation
+Capacity utilisation,Q3 FY26,,%,Q4FY26- PPT.pdf,9,,not_found,"Polycab investor presentation Q4 FY26, slide 9",quarterly utilisation not stated,kpis,Capacity utilisation
+Capacity utilisation,Q4 FY26,,%,Q4FY26- PPT.pdf,9,,not_found,"Polycab investor presentation Q4 FY26, slide 9",quarterly utilisation not stated,kpis,Capacity utilisation
+Advertisement and sales-promotion spend,FY23,124.4,Rs cr,Q4FY24- PPT.pdf,26,,changed,"Polycab investor presentation Q4 FY24, slide 26",,kpis,Advertisement and sales-promotion spend
+Advertisement and sales-promotion spend,FY24,198.9,Rs cr,Q4FY25- PPT.pdf,26,,changed,"Polycab investor presentation Q4 FY25, slide 26",,kpis,Advertisement and sales-promotion spend
+Advertisement and sales-promotion spend,FY25,120.9,Rs cr,Q4FY26- PPT.pdf,27,120.9,verified,"Polycab investor presentation Q4 FY26, slide 27",,kpis,Advertisement and sales-promotion spend
+Advertisement and sales-promotion spend,FY26,190.2,Rs cr,Q4FY26- PPT.pdf,27,190.2,verified,"Polycab investor presentation Q4 FY26, slide 27",,kpis,Advertisement and sales-promotion spend
+Advertisement and sales-promotion spend,Q2 FY27,40.5,Rs cr,Q2FY27- PPT.pdf,16,,changed,"Polycab investor presentation Q2 FY27, slide 16",,kpis,Advertisement and sales-promotion spend
+Top customer share of sales,FY26,,%,FY26- Annual report.pdf,12,4.0,not_found,"Polycab Annual Report FY26, p.12",customer concentration not stated in the report or decks,kpis,Top customer share of sales
+Top 5 customers share of sales,FY26,,%,FY26- Annual report.pdf,12,13.0,not_found,"Polycab Annual Report FY26, p.12",customer concentration not stated in the report or decks,kpis,Top 5 customers share of sales
+Top 10 customers share of sales,FY26,,%,FY26- Annual report.pdf,12,21.0,not_found,"Polycab Annual Report FY26, p.12",customer concentration not stated in the report or decks,kpis,Top 10 customers share of sales
+Segment revenue: Wires and Cables,FY22,10793.81,Rs cr,FY22- Annual report.pdf,118,10793.81,verified,"Polycab Annual Report FY22, p.118",,segments_y,Wires and Cables|revenue_cr
+Segment revenue: FMEG,FY22,1254.38,Rs cr,FY22- Annual report.pdf,118,1254.38,verified,"Polycab Annual Report FY22, p.118",,segments_y,FMEG|revenue_cr
+Segment revenue: Others,FY22,370.18,Rs cr,FY22- Annual report.pdf,118,370.18,verified,"Polycab Annual Report FY22, p.118",,segments_y,Others|revenue_cr
+Segment revenue: Wires and Cables,FY23,12777.5,Rs cr,FY23- Annual report.pdf,150,12777.5,verified,"Polycab Annual Report FY23, p.150",,segments_y,Wires and Cables|revenue_cr
+Segment revenue: FMEG,FY23,1260.74,Rs cr,FY23- Annual report.pdf,150,1260.74,verified,"Polycab Annual Report FY23, p.150",,segments_y,FMEG|revenue_cr
+Segment revenue: Others,FY23,464.71,Rs cr,FY23- Annual report.pdf,150,464.71,verified,"Polycab Annual Report FY23, p.150",,segments_y,Others|revenue_cr
+Segment revenue: Wires and Cables,FY24,16107.25,Rs cr,FY24- Annual report.pdf,192,16107.25,verified,"Polycab Annual Report FY24, p.192",,segments_y,Wires and Cables|revenue_cr
+Segment revenue: FMEG,FY24,1298.82,Rs cr,FY24- Annual report.pdf,192,1298.82,verified,"Polycab Annual Report FY24, p.192",,segments_y,FMEG|revenue_cr
+Segment revenue: EPC,FY24,1100.81,Rs cr,FY24- Annual report.pdf,192,1100.81,verified,"Polycab Annual Report FY24, p.192",,segments_y,EPC|revenue_cr
+Segment revenue: Wires and Cables,FY25,19236.63,Rs cr,FY25-Annual report.pdf,335,19236.63,verified,"Polycab Annual Report FY25, p.335",,segments_y,Wires and Cables|revenue_cr
+Segment revenue: FMEG,FY25,1682.17,Rs cr,FY25-Annual report.pdf,335,1682.18,verified,"Polycab Annual Report FY25, p.335",,segments_y,FMEG|revenue_cr
+Segment revenue: EPC,FY25,1919.24,Rs cr,FY25-Annual report.pdf,335,1919.24,verified,"Polycab Annual Report FY25, p.335",,segments_y,EPC|revenue_cr
+Segment revenue: Wires and Cables,FY26,25534.42,Rs cr,FY26- Annual report.pdf,389,25534.42,verified,"Polycab Annual Report FY26, p.389",,segments_y,Wires and Cables|revenue_cr
+Segment revenue: FMEG,FY26,2069.33,Rs cr,FY26- Annual report.pdf,389,2069.33,verified,"Polycab Annual Report FY26, p.389",,segments_y,FMEG|revenue_cr
+Segment revenue: EPC,FY26,1666.5,Rs cr,FY26- Annual report.pdf,389,1666.5,verified,"Polycab Annual Report FY26, p.389",,segments_y,EPC|revenue_cr
+Segment PBIT margin: Wires and Cables,FY26,13.62,%,FY26- Annual report.pdf,389,13.62,verified,"Polycab Annual Report FY26, p.389","segment result Rs 3,478.12 cr / segment revenue",segments_y,Wires and Cables|pbit_margin_pct
+Segment PBIT margin: FMEG,FY26,2.65,%,FY26- Annual report.pdf,389,2.65,verified,"Polycab Annual Report FY26, p.389",segment result Rs 54.84 cr / segment revenue,segments_y,FMEG|pbit_margin_pct
+Segment PBIT margin: EPC,FY26,9.93,%,FY26- Annual report.pdf,389,9.93,verified,"Polycab Annual Report FY26, p.389",segment result Rs 165.55 cr / segment revenue,segments_y,EPC|pbit_margin_pct
+Uniglobus amalgamation,2026-03-27,2026-03-27,date,FY26- Annual report.pdf,153,2026-03-27,verified,"Polycab Annual Report FY26, p.153",effective 27 Mar 2026,expansions,Uniglobus
+Polycon Infra Projects incorporation,2026-04-24,2026-04-24,date,FY26- Annual report.pdf,217,2026-04-24,verified,"Polycab Annual Report FY26, p.217",,expansions,Polycon Infra Projects
+Steel Matrix wholly owned,2021-11-11,2021-11-11,date,FY26- Annual report.pdf,216,,changed,"Polycab Annual Report FY26, p.216",wholly owned subsidiary since 11 Nov 2021,expansions,Steel Matrix
+BharatNet Phase-III contracts,2026-03,8000,Rs cr,FY26- Annual report.pdf,148,8000.0,verified,"Polycab Annual Report FY26, p.148",contracts aggregating ~Rs 80 billion; execution commenced in FY26 (p.14),expansions,BharatNet execution started
+EHV cable plant,Q3 FY23,,date,FY26- Annual report.pdf,30,Q3 FY23,not_found,"Polycab Annual Report FY26, p.30",plant under construction at Halol (p.30); commissioning date not stated,expansions,EHV cable facility
+Project Spring annual capex band,2025-01-23,1200-1600,Rs cr/yr,Q4FY26- PPT.pdf,17,1200-1600,verified,"Polycab investor presentation Q4 FY26, slide 17",FY30 guidance: Rs 12-16 Bn annual capex,expansions,Project Spring launched
+FY26 capex,FY26,1480.33,Rs cr,FY26- Annual report.pdf,319,1480.33,verified,"Polycab Annual Report FY26, p.319",,expansions,FY26 capex
+Export footprint,FY26,94,count,Q4FY26- PPT.pdf,9,94,verified,"Polycab investor presentation Q4 FY26, slide 9",10 new geographies in FY26,expansions,Export footprint reached 94 countries
