@@ -87,7 +87,8 @@ def count(value_text, v, dec=0):
 
 
 def count_up_script():
-    """Animate .pc-count numbers once (0.7 s, ease-out, Indian digit grouping); skipped under reduced motion."""
+    """Animate .pc-count numbers once (0.7 s, ease-out, Indian digit grouping; skipped under reduced motion), and
+    refit charts when a tab is shown."""
     st.html("""<script>
 (() => {
   if (window.__pcCount) return; window.__pcCount = true;
@@ -106,6 +107,18 @@ def count_up_script():
   };
   const scan = () => document.querySelectorAll('.pc-count:not([data-done])').forEach(run);
   scan(); new MutationObserver(scan).observe(document.body, {childList: true, subtree: true});
+  // charts in a tab that was hidden were drawn at Plotly's default 700 px; refit the visible ones whose width is off
+  const fit = () => { const P = window.Plotly; if (!P || !P.Plots) return;
+    document.querySelectorAll('.js-plotly-plot').forEach(gd => { const w = gd.getBoundingClientRect().width;
+      const s = gd.querySelector('svg.main-svg');
+      if (w > 0 && s && Math.abs(s.getBoundingClientRect().width - w) > 2) P.Plots.resize(gd); }); };
+  const refit = () => [60, 300, 900].forEach(ms => setTimeout(fit, ms));
+  document.addEventListener('click', e => { if (e.target.closest('[data-testid="stTab"]')) refit(); }, true);
+  document.addEventListener('keyup', e => { if (e.target.closest && e.target.closest('[data-testid="stTab"]')) refit(); }, true);
+  let t; const soon = () => { clearTimeout(t); t = setTimeout(fit, 150); };
+  window.addEventListener('resize', soon);
+  new MutationObserver(soon).observe(document.body, {childList: true, subtree: true});  // charts drawn later
+  refit();
 })();
 </script>""", unsafe_allow_javascript=True)
 
@@ -129,6 +142,10 @@ GLOSSARY = {
     "pp": "Percentage points: the difference between two percentages (12% → 14% is +2 pp).",
     "Inter-segment elimination": "Sales between segments, removed when segment revenue is consolidated.",
     "Promoter / FII / DII": "Founder group / foreign institutional investors / domestic institutional investors.",
+    "E (estimate)": "A forecast year (e.g. FY27E), calculated from your slider assumptions, not reported.",
+    "CAGR": "Compound annual growth rate: the steady yearly rate that turns the start value into the end value.",
+    "Working-capital days": "Receivables, inventory and payables expressed as days of revenue or of materials cost.",
+    "Sensitivity": "How much a result changes when one assumption moves and the others stay fixed.",
 }
 
 
@@ -209,6 +226,8 @@ def short_tag(text):
     yf = "yfinance" in t
     if "Peer companies" in t:
         return "Source: Peer filings (unverified)"
+    if "your assumptions" in t.lower() or "forecast" in t.lower():
+        return "Source: Annual reports + your assumptions" if ars or decks else "Source: Your assumptions (dashboard calc)"
     if ars and decks:
         tag = "Annual reports, presentations"
     elif ars:
@@ -724,7 +743,9 @@ def show(fig, key=None, animate=False):
     t = fig.layout.title.text if fig.layout.title and fig.layout.title.text else ""
     if t:
         _state()["what"] = re.sub(r"<[^>]+>", " ", t)
-    st.plotly_chart(fig, width="stretch", theme=None, key=key, config={"displaylogo": False})
+    # responsive: Plotly refits the chart when its container changes size (e.g. a tab that was hidden is shown);
+    # a custom config replaces Streamlit's default, so it must be set here explicitly
+    st.plotly_chart(fig, width="stretch", theme=None, key=key, config={"displaylogo": False, "responsive": True})
 
 
 _NUMLIKE = re.compile(r"^\s*([▲▼■]\s*)?[+\-−]?\s*(₹\s*)?[\d(]|^\s*n/a\s*$|^\s*$")

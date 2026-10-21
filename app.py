@@ -5,6 +5,7 @@ import streamlit as st
 import fin_sections
 import stock_page
 import tab_expansions
+import tab_forecast
 import tab_ratios
 import tab_segments
 import tab_peers
@@ -100,7 +101,7 @@ close_1y = float(yr_ago.close.iloc[-1]) if len(yr_ago) else None
 reset_sources()
 px = stock_page.prices()
 # Section tabs first: theme.css pins their bar to the top of the page (sticky); the compact price header sits below.
-TAB_NAMES = ['Overview', 'Financials', 'Ratios', 'Segments & KPIs', 'Expansions', 'Peers & Ownership']
+TAB_NAMES = ['Overview', 'Financials', 'Forecast', 'Ratios', 'Segments & KPIs', 'Expansions', 'Peers & Ownership']
 tabs = st.tabs(TAB_NAMES)
 
 
@@ -267,30 +268,36 @@ with tabs[1]:
             out.columns = [f"{p} (to verify)" if v else p for p, v in zip(q.period, q.to_verify)]
             table(out, width="stretch")
 
-# ---------------------------------------------------------------- Ratios
+# ---------------------------------------------------------------- Forecast
 with tabs[2]:
-    tab_top(2)
+    tab_top(2, ttm=False)
+    tab_forecast.render(sel)
+
+# ---------------------------------------------------------------- Ratios
+with tabs[3]:
+    tab_top(3)
     tab_ratios.render(FYS, (yr0, yr1), show_ttm)
     st.divider()
     tab_stock.render_valuation(sel)
 
 # ---------------------------------------------------------------- Segments & KPIs, Expansions
-with tabs[3]:
-    tab_top(3, fq=True)
-    tab_segments.render(sel, freq, show_ttm)
 with tabs[4]:
-    tab_top(4, period=False)  # the timeline has its own period filter bar
+    tab_top(4, fq=True)
+    tab_segments.render(sel, freq, show_ttm)
+with tabs[5]:
+    tab_top(5, period=False)  # the timeline has its own period filter bar
     tab_expansions.render()
 
 # ---------------------------------------------------------------- Peers & Ownership
-with tabs[5]:
-    tab_top(5, yr=False, ttm=False, fq=True)
+with tabs[6]:
+    tab_top(6, yr=False, ttm=False, fq=True)
     tab_peers.render(freq)
 
 # ---------------------------------------------------------------- Glossary + Sources & notes, one per tab
 TERMS = [
     ["TTM", "EBITDA", "EBITDA margin", "PAT", "ROCE", "YoY / QoQ", "pp", "PBIT margin", "Inter-segment elimination"],
     ["EBITDA", "PAT", "CFO", "FCF", "Acceptances", "TTM", "YoY / QoQ"],
+    ["E (estimate)", "CAGR", "EBITDA margin", "PAT", "FCF", "Working-capital days", "Sensitivity", "ROE", "ROCE", "pp"],
     ["ROE", "ROCE", "DuPont", "EBITDA margin", "Cash conversion cycle", "Acceptances", "P/E", "EV/EBITDA", "pp"],
     ["PBIT margin", "Inter-segment elimination", "YoY / QoQ", "TTM"],
     ["TTM", "YoY / QoQ"],

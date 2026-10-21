@@ -152,6 +152,17 @@
 .pc-spark { display: block; max-width: 100%; height: auto; }
 .pc-tile .pc-spark { width: 92px; height: auto; }
 
+/* forecast tab */
+.pc-tiles-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.pc-fc-group { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent); margin: 10px 0 2px 0; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+.pc-fc-note { color: var(--text2); font-size: 0.86rem; line-height: 1.4; }
+.pc-fc-note b { color: var(--text); }
+.pc-fc-warn { display: flex; gap: 8px; align-items: center; color: var(--text2); font-size: 0.86rem; margin: -6px 0 12px 0; }
+.pc-fc-checks { background: var(--chip); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px;
+  margin: 8px 0 10px 0; color: var(--text); font-size: 0.86rem; }
+.pc-fc-checks ul { margin: 6px 0 0 0; padding-left: 1rem; color: var(--text2); }
+
 /* latest quarter */
 .pc-lq-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: var(--text2);
   font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; }
