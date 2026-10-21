@@ -11,6 +11,20 @@
 .stApp { background: var(--page); }
 [data-testid="stSidebar"] > div:first-child { background: var(--card); border-right: 1px solid var(--border); }
 
+/* ---------- native text: always the dashboard's text colour ----------
+   Streamlit colours headings, markdown, captions and metrics from its own theme. If that theme is not the locked dark
+   one (config.toml missing on a host, or a viewer picks "Light" in the app's Settings), its dark-grey text would sit on
+   the dashboard's dark surfaces. These rules pin readable colours; buttons, tabs and alerts keep their own. */
+.stApp { color: var(--w-text); }
+.stApp :is(h1, h2, h3, h4, h5, h6):not(.pc *),
+.stApp [data-testid="stHeadingWithActionElements"] :is(h1, h2, h3, h4, h5, h6) span,
+.stApp [data-testid="stMarkdownContainer"]:not(:is(button, [data-testid="stTab"], [data-testid="stAlert"]) *),
+.stApp [data-testid="stExpander"] summary, .stApp [data-testid="stExpander"] summary *,
+.stApp [data-testid="stMetricLabel"], .stApp [data-testid="stMetricLabel"] *, .stApp [data-testid="stMetricValue"],
+.stApp [data-testid="stSidebar"] :is(h1, h2, h3, p, li, span):not(button *):not(.pc *) { color: var(--w-text) !important; }
+.stApp [data-testid="stCaptionContainer"], .stApp [data-testid="stCaptionContainer"] * { color: var(--muted) !important; }
+.stApp :is(h1, h2, h3, h4) [data-testid="stIconMaterial"] { color: var(--w-accent) !important; }
+
 /* ---------- light mode ---------- */
 .stApp:has(.pc-light-flag) { filter: invert(1) hue-rotate(180deg); background: var(--inv-page); }
 .stApp:has(.pc-light-flag) :is(.stPlotlyChart, .pc, img, video) { filter: invert(1) hue-rotate(180deg); }

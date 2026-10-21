@@ -387,12 +387,11 @@ def render(sel):
                    "Net cash = cash + current investments − borrowings; borrowings held at the base-year level"),
                "Forecast: net cash and equity")
 
-    c1, c2 = st.columns([3, 2])
-    with c1, card("fc-tables"):
+    with card("fc-tables"):  # full width: every actual and forecast year visible without scrolling
         st.subheader(":material/table_view: Forecast statements (₹ crore)")
         which = st.segmented_control("Statement", list(LINES), default="P&L", key="fc_table") or "P&L"
         table(_table(act, fc, which), width="stretch")
-        d1, d2, _ = st.columns([1, 1, 2.2])
+        d1, d2, _ = st.columns([1, 1, 8])
         csv = pd.concat({w: _table(act, fc, w) for w in LINES}).to_csv().encode("utf-8")
         d1.download_button("CSV", csv, "polycab_forecast.csv", "text/csv", key="fc_csv",
                            icon=":material/download:")
@@ -403,20 +402,24 @@ def render(sel):
                f"balance sheet and cash flow: {XLSX}. Staff & other (actual) = revenue − materials & mfg − EBITDA. "
                "Balance sheet is simplified: other assets and liabilities held at the base-year level.",
                "Forecast statements")
-    with c2, card("fc-sens"):
+    with card("fc-sens"):
         st.subheader(":material/tune: What moves final-year PAT")
         st.caption(f"Change in {end} PAT if each driver rises by 1 percentage point (others unchanged).")
-        show(_sensitivity(base, v, by_seg), key="fc_sens")
-        source("Dashboard calculation on your assumptions; each driver moved by +1 pp from its slider value.",
-               "Forecast sensitivity")
-        good = all(ok.values())
-        st.html(f'<div class="pc pc-fc-checks"><b>{"✓" if good else "✗"} Model checks {sum(ok.values())}/{len(ok)}'
-                f'</b><ul>' + "".join(f'<li>{"✓" if x else "✗"} {k}</li>' for k, x in ok.items()) + "</ul></div>")
-        g_imp = cagr(fc.revenue.iloc[-1], act_last.revenue)
-        st.button("Use in valuation calculator", key="fc_to_calc", icon=":material/calculate:",
-                  on_click=_to_calc, args=(g_imp, fc.npm.iloc[-1]),
-                  help="Sets the Ratios-tab calculator to this forecast's revenue CAGR, final-year net margin and "
-                       "5 years (the calculator starts from TTM revenue, so results differ slightly).")
+        s1, s2 = st.columns([2.2, 1], gap="large")
+        with s1:
+            show(_sensitivity(base, v, by_seg), key="fc_sens")
+            source("Dashboard calculation on your assumptions; each driver moved by +1 pp from its slider value.",
+                   "Forecast sensitivity")
+        with s2:
+            good = all(ok.values())
+            st.html(f'<div class="pc pc-fc-checks"><b>{"✓" if good else "✗"} Model checks '
+                    f'{sum(ok.values())}/{len(ok)}</b><ul>'
+                    + "".join(f'<li>{"✓" if x else "✗"} {k}</li>' for k, x in ok.items()) + "</ul></div>")
+            g_imp = cagr(fc.revenue.iloc[-1], act_last.revenue)
+            st.button("Use in valuation calculator", key="fc_to_calc", icon=":material/calculate:",
+                      on_click=_to_calc, args=(g_imp, fc.npm.iloc[-1]),
+                      help="Sets the Ratios-tab calculator to this forecast's revenue CAGR, final-year net margin "
+                           "and 5 years (the calculator starts from TTM revenue, so results differ slightly).")
 
 
 def _to_calc(g, m):
